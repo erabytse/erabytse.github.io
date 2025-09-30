@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            max-width: 700px;
+            max-width: 760px;
             margin: 80px auto;
             padding: 0 20px;
             line-height: 1.6;
@@ -20,48 +20,92 @@
         }
         h1 {
             font-weight: 400;
-            font-size: 2.2em;
-            margin-bottom: 10px;
+            font-size: 2.4em;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
         }
         .subtitle {
-            color: #666;
-            font-size: 1.1em;
-            max-width: 500px;
-            margin: 0 auto;
+            color: #555;
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+        }
+        .philosophy {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            font-style: italic;
+            color: #444;
+            margin: 30px 0;
+            border-left: 3px solid #5a9;
         }
         .tools {
             display: grid;
             gap: 25px;
+            margin: 40px 0;
         }
         .tool {
             padding: 20px;
             border: 1px solid #eee;
             border-radius: 8px;
-            transition: border-color 0.3s;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
         .tool:hover {
             border-color: #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         .tool h2 {
             margin-top: 0;
             font-size: 1.3em;
+            color: #222;
         }
         .tool p {
             margin: 10px 0;
             color: #555;
         }
-        .philosophy {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-            font-style: italic;
-            color: #666;
+        .get-started {
+            background: #f0f7ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        .get-started h2 {
+            margin-top: 0;
+            color: #2c5282;
+        }
+        .get-started code {
+            background: #e6f0fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .contribute {
+            background: #f8fff8;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 50px 0;
+            border-left: 3px solid #4caf50;
+        }
+        .contribute h2 {
+            margin-top: 0;
+            color: #2e7d32;
         }
         footer {
-            margin-top: 50px;
+            margin-top: 60px;
             text-align: center;
-            color: #888;
-            font-size: 0.9em;
+            color: #777;
+            font-size: 0.95em;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #1a56a8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -69,7 +113,19 @@
     <header>
         <h1>erabytse</h1>
         <p class="subtitle">A quiet rebellion against digital waste.<br>Open tools for intentional digital care.</p>
+        
+        <div class="philosophy">
+            “Before you delete, ask: does this deserve to be remembered differently?”
+        </div>
     </header>
+
+    <div class="get-started">
+        <h2>🌱 Get Started</h2>
+        <p>All tools are open source, offline-first, and free.</p>
+        <p>Install any tool with:</p>
+        <code>pip install erabytse-<i>toolname</i></code>
+        <p>Or <a href="https://github.com/erabytse">browse the source</a>.</p>
+    </div>
 
     <div class="tools">
         <div class="tool">
@@ -94,8 +150,17 @@
         </div>
     </div>
 
-    <div class="philosophy">
-        <p>“Before you delete, ask: does this deserve to be remembered differently?”</p>
+    <div class="contribute">
+        <h2>🤝 Contribute</h2>
+        <p>erabytse is built in the open. You can:</p>
+        <ul>
+            <li>🐞 Report issues or suggest improvements</li>
+            <li>✨ Submit a pull request</li>
+            <li>🌍 Translate documentation</li>
+            <li>💬 Share your ritual of digital care</li>
+        </ul>
+        <p>All contributions are welcome — especially those guided by intention.</p>
+        <p><a href="https://github.com/erabytse">Explore the repositories</a></p>
     </div>
 
     <footer>
